@@ -1,0 +1,15 @@
+tasks:
+
+- source: tasks/limpieza-de-datos.ipynb
+  product:
+    df: output/limpieza-de-datos-df.pkl
+    nb: output/limpieza-de-datos.ipynb
+
+- source: tasks/preprocesamiento.ipynb
+  product:
+    df: output/preprocesamiento-df.pkl
+    nb: output/preprocesamiento.ipynb
+
+- source: tasks/modelado.ipynb
+  product:
+    nb: output/modelado.ipynb

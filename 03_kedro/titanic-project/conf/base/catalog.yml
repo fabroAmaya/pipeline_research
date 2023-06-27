@@ -1,0 +1,20 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+titanic_dataset:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/01_titanic_dataset.csv
+
+titanic_dataset_cleaned:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/titanic_dataset_cleaned.parquet
+
+titanic_dataset_preprocessed:
+  type: pandas.CSVDataSet
+  filepath: data/05_intermediate/titanic_dataset_preprocessed.parquet
+
+model:
+  type: pickle.PickleDataSet
+  filepath: data/06_models/model.pickle
+  versioned: true

@@ -1,0 +1,23 @@
+meta:
+  jupyter_hot_reload: True
+
+tasks:
+  - source: get.py
+    product:
+      nb: product/nb/get.ipynb
+      data: product/data/data.csv
+
+  - source: feature-a.py
+    product:
+      nb: product/nb/feature-a.ipynb
+      data: product/data/feature-a.csv
+
+  - source: feature-b.py
+    product:
+      nb: b.ipynb
+      data: b.csv
+
+  - source: fit.py
+    product:
+      nb: fit.ipynb
+      data: model.pickle
